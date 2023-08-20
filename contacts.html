@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/contacts.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/normalize.css">
+  <link rel="stylesheet icon" type="image/svg" href="assets/images/static/fvc.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <script defer src="assets/js/main.js">
+  </script>
+</head>
+
+<body>
+  <!--Шапка сайта  Desktop начало-->
+  <div class="container">
+    <header class="header">
+      <div class="header-logotype">
+        <a href="index.html"><img class="logo-header" alt="Логотип компании"
+            src="assets/images/static/logotype.svg"></a>
+      </div>
+      <nav class="header-nav">
+        <a class="nav_items" href="index.html">Главная</a>
+        <a class="nav_items" href="gallery.html">Галерея</a>
+        <a class="nav_items" href="price.html">Цены</a>
+        <a class="nav_items nav_items--active" href="contacts.html">Контакты</a>
+      </nav>
+    </header>
+  </div>
+  <!--Шапка сайта Desktop конец-->
+
+  <!--Шапка сайта Mobile начало-->
+  <header class="header-mobile">
+    <div class="container">
+      <div class="header-line-mobile">
+        <div class="header-logotype-mobile">
+          <a href="index.html"><img class="icon" alt="Логотип компании" src="assets/images/static/logotype.svg"></a>
+        </div>
+        <div class="exit-icon-mobile">
+          <button class="burger-button" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="nav-mobile-active" id="nav-mobilejs">
+      <nav class="header-nav-mobile">
+        <a class="nav_items-mob" href="index.html">Главная</a>
+        <a class="nav_items-mob" href="gallery.html">Галерея</a>
+        <a class="nav_items-mob" href="price.html">Цены</a>
+        <a class="nav_items-mob nav_items-mob--active" href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+  <!--Шапка сайта Mobile конец-->
+  <!--Контейнер сайта (header+main) начало-->
+  <div class="container">
+
+    <!--Контент сайта GENERAL (начало)-->
+    <main class="main">
+      <div class="contacts-info">
+        <p class="main__title">
+          Как нас найти
+        </p>
+        <p class="main__text">
+          Школа английского «Эй-Би-Си» находится в Калининском районе Санкт-Петербурга, в пяти минутах ходьбы от станции
+          метро Академическая.
+          <br><br>
+          Вход находится с внутренней стороны двора. Смело захотите в гости, мы будем рады показаться вам своё
+          пространство и познакомиться!
+        </p>
+      </div>
+      <div class="main__map">
+        <iframe class="yandex-map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa0a662ee56d3eb4c4efbb20eacda2917cb9aabf9be48a66a0f2cc60470948aec&amp;source=constructor"
+          width="100%" height="427" frameborder="0"></iframe>
+      </div>
+      <div class="main__contacts">
+        <div class="our_contacts">
+          <div class="address">
+            <div class="address-logo">
+              <img class="address-logo-img" src="assets/images/contacts/free-icon-placeholder-592243.png"
+                alt="logo-navigation">
+            </div>
+            <div class="address-text">
+              <p class="address-text-p">пр. Науки, 17, корп. 6, пом. 7Н
+                Санкт-Петербург</p>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="phone-logo">
+              <img class="phone-logo-img" src="assets/images/contacts/free-icon-vibrating-phone-73552-1.png"
+                alt="logo-navigation">
+            </div>
+            <div class="phone-nomber">
+              <p>+7 (901) 308-01-48</p>
+            </div>
+          </div>
+          <div class="email">
+            <div class="email-logo">
+              <img class="phone-logo-img" src="assets/images/contacts/free-icon-email-347722.png" alt="logo-email">
+            </div>
+            <div class="email-address">
+              <a class="top-link" href="milto:nouabc@mail.ru">nouabc@mail.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="feedback">
+          <p class="fdb-contacts">
+            Мы всегда открыты любой обратной связи: отзывов, вопросов и пожеланий:
+          </p>
+          <div class="form">
+            <form class="contacts" name="contacts">
+              <div class="input-blocks">
+                <input class="input-contacts" type="text" placeholder="Имя" tabindex="1">
+              </div>
+              <div class="input-blocks">
+                <input class="input-contacts" type="tel" placeholder="Номер телефона" tabindex="1">
+              </div>
+              <div class="input-blocks">
+                <textarea class="input-contacts" rows="6" placeholder="Сообщение"></textarea>
+              </div>
+            </form>
+            <div class="contacts-button">
+              <button class="contacts-btn" href="#">ОТПРАВИТЬ</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Контент сайта GENERAL (конец)-->
+
+  </div>
+  <!--Контейнер сайта (header+main) конец-->
+
+  <!--Footer GENERAL начало-->
+  <!--Background footer начало-->
+  <div class="wrapper">
+    <!--Контейнер сайта (footer) начало-->
+    <div class="container">
+      <!--Footer начало-->
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo-footer" alt="Company`s_logo" src="assets/images/static/logotype.svg">
+            </a>
+          </div>
+          <div class="footer__content">
+            <div class="footer-nav">
+              <a class="footer-nav__top-link" href="index.html">Главная</a>
+              <a class="footer-nav__top-link" href="gallery.html">Галерея</a>
+              <a class="footer-nav__top-link" href="price.html">Цены</a>
+              <a class="footer-nav__top-link" href="contacts.html">Контакты</a>
+              <a class="footer-nav__top-link" href="#">Документация</a>
+            </div>
+            <div class="footer__call">
+              <div class="footer-icon-call">
+                <a class="icon-col__link" href="#">
+                  <img class="icon-call__img" alt="Icon_call" src="assets/images/static/icon-call.svg">
+                </a>
+              </div>
+              <a class="call-phone__top-link" href="telto:+7(901)308-01-48">+7 (901) 308-01-48</a>
+              <p class="back-call-p">
+                Заказать обратный звонок
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="ftr-btm-text">Частное образовательное учреждение дополнительного образования «Эй-Би-Си»</p>
+        </div>
+      </footer>
+      <!--Footer конец-->
+    </div>
+    <!--Контейнер сайта (footer) конец-->
+  </div>
+  <!--Background footer конец-->
+  <!--Footer GENERAL конец-->
+
+  <!--Footer MOBILE начало-->
+  <!--Background footer начало-->
+  <div class="wrapper-mbl">
+    <!--Контейнер сайта (footer) начало-->
+    <div class="container-mbl">
+      <!--Footer начало-->
+      <footer class="footer-mbl">
+
+        <div class="footer-logotype-mbl">
+          <a href="index.html">
+            <img class="footer-logo-mbl" alt="Logotipe_company_mobile" src="assets/images/static/logotype-mob.svg">
+          </a>
+        </div>
+        <div class="footer-bottom-mbl">
+          <p class="ftr-btm-mdl">Частное образовательное учреждение дополнительного образования «Эй-Би-Си»</p>
+        </div>
+        <div class="footer-nav-mbl">
+          <a class="ftr-nav__top-link-mbl" href="index.html">Главная</a>
+          <a class="ftr-nav__top-link-mbl" href="gallery.html">Галерея</a>
+          <a class="ftr-nav__top-link-mbl" href="price.html">Цены</a>
+          <a class="ftr-nav__top-link-mbl" href="contacts.html">Контакты</a>
+          <a class="ftr-nav__top-link-mbl" href="#">Документация</a>
+        </div>
+        <div class="footer__call-mbl">
+          <div class="footer__call-phone-mbl">
+            <a class="ftr__call-phone-mbl" href="telto:+7(901)308-01-48">+7 (901) 308-01-48</a>
+          </div>
+          <div class="back-call-mbl">
+            <p class="back-call-mbl-p">
+              Заказать обратный звонок
+            </p>
+          </div>
+        </div>
+
+      </footer>
+      <!--Footer конец-->
+    </div>
+    <!--Контейнер сайта (footer) конец-->
+  </div>
+  <!--Background footer конец-->
+  <!--Footer MOBILE конец-->
+
+
+</body>
+
+</html>

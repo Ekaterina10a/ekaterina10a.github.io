@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/*Контент GENERALE (начало кода) */
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-info {
+  margin-top: 90px;
+  margin-bottom: 22px;
+}
+@media screen and (width <= 1024px) {
+  .contacts-info {
+    margin-top: 45px;
+  }
+}
+
+.main__title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 0;
+}
+@media screen and (width <= 1024px) {
+  .main__title {
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+}
+@media screen and (width <= 1024px) {
+  .main__text {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .yandex-map {
+    border-radius: 30px;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .main__map {
+    display: flex;
+    margin-bottom: 69px;
+  }
+}
+@media screen and (width <= 1024px) {
+  .main__map {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .main__contacts {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (576px <= width <= 1024px) {
+  .main__contacts {
+    flex-direction: column;
+  }
+}
+.our_contacts {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (width > 1024px) {
+  .our_contacts {
+    width: 35%;
+  }
+}
+
+.address,
+.phone,
+.email {
+  display: flex;
+}
+@media screen and (width <= 1024px) {
+  .address,
+  .phone,
+  .email {
+    flex-direction: column;
+  }
+}
+
+.address-logo,
+.phone-logo,
+.email-logo {
+  display: flex;
+  align-items: center;
+}
+@media screen and (width > 1024px) {
+  .address-logo,
+  .phone-logo,
+  .email-logo {
+    margin-right: 22px;
+  }
+}
+@media screen and (width <= 1024px) {
+  .address-logo,
+  .phone-logo,
+  .email-logo {
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (width <= 1024px) {
+  .address-logo-img {
+    align-items: center;
+  }
+}
+
+.address-text-p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (width <= 1024px) {
+  .address-text-p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.phone {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.phone-nomber {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (width <= 1024px) {
+  .phone-nomber {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.email-address {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+@media screen and (width <= 1024px) {
+  .email-address {
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.top-link {
+  color: black;
+  text-decoration: none;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (width > 1024px) {
+  .feedback {
+    width: 45%;
+  }
+}
+@media screen and (width <= 1024px) {
+  .feedback {
+    margin-top: 45px;
+  }
+}
+
+.fdb-contacts {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (width <= 1024px) {
+  .fdb-contacts {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.input-contacts {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 2px solid #00ABEC;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+.input-contacts::-moz-placeholder {
+  color: rgb(118, 185, 135);
+  opacity: 1;
+}
+.input-contacts::placeholder {
+  color: rgb(118, 185, 135);
+  opacity: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (width <= 1024px) {
+  .contacts-button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.contacts-btn {
+  background-color: #5CB772;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 28px;
+  float: right;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contacts-btn:hover {
+  background-color: #00ABEC;
+}
+
+/*Контент GENERALE (конец кода)*//*# sourceMappingURL=contacts.css.map */

@@ -1,0 +1,37 @@
+$main-color: #000000
+$footer-bg: rgba(136, 190, 204, 0.25)
+$yellow: rgb(249, 179, 67)
+$red: #E69596
+$green: #5CB772
+$blue: #00ABEC
+
+//Голубые ссылки
+@mixin  blue-link
+    font:
+        family: 'Montserrat', sans-serif
+        weight: 500
+        size: 16px
+    color: $blue
+    text:
+        decoration: underline
+    cursor: pointer
+
+//Заголовки секций
+@mixin  section-title
+    font:
+        family: 'Montserrat', sans-serif
+        weight: 500
+        size: 36px
+    text:
+        decoration: none
+    color: $main-color
+
+//Тексты секций
+@mixin  section-text
+    font:
+        family: 'Montserrat', sans-serif
+        weight: 300
+        size: 20px
+    text:
+        decoration: none
+    color: $main-color

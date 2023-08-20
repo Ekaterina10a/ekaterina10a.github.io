@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/*Контент GENERALE (начало кода) */
+.main,
+.space-info,
+.main__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 22px;
+}
+@media screen and (width <= 1024px) {
+  .main__gallery {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (width > 1024px) {
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  .gallery-img:hover {
+    transform: scale(1.1);
+    filter: saturate(2);
+  }
+}
+@media screen and (width <= 1024px) {
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: none;
+  }
+}
+
+.space-info {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+@media screen and (width <= 1024px) {
+  .space-info {
+    margin-top: 45px;
+  }
+}
+
+.main__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 0;
+}
+@media screen and (width <= 1024px) {
+  .main__title {
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+}
+@media screen and (width <= 1024px) {
+  .main__text {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/*Контент GENERALE (конец кода)*/
+/*Контент MOBILE (начало кода)*/
+.main-mbl,
+.main__title-mbl,
+.main__text-mbl {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title-mbl {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.mn__text-mbl {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.gallery__item-mbl {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+.gallery-img-mbl {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Контент MOBILE (конец кода) *//*# sourceMappingURL=gallery.css.map */
